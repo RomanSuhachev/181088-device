@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Роман Сухачев](https://up.htmlacademy.ru/htmlcss/22/user/181088).
-* Наставник: `Неизвестно`.
+* Наставник: <a href="https://htmlacademy.ru/profile/a-yudin" target="_blank">Александр Юдин</a>
 
 ---
 
