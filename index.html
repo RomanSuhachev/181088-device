@@ -5,21 +5,24 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-  		<nav class="header-nav">
      <header class="main-header">
+      <nav class="header-nav">
+        <h1 class="title-hidden">Device</h1>
      <div class="wrapper">
       <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="DEVICE"></a></div>
-        <h2 class="main-title title-hidden">DEVICE</h2>
-     <div class="search-container"><input type="text" placeholder="Поиск по сайту"><button class="btn-search" type="submit">Поиск</button>
+        <h2 class="main-title">DEVICE</h2>
+     <div class="search-container">
+      <form action="" class="search-form" method="_POST">
+      <input type="text" placeholder="Поиск по сайту"><button class="btn-search" type="submit">Поиск</button>
+      </form>
      </div>
      <ul class="user-login">
-      <li class="login"><a href="#">Войти</a></li>
+      <li class="login"><a href="#">Выйти</a></li>
           <li class="username hidden"><a href="#">Валентин Петухов</a></li>
-          <li><a href="" class="logout hidden">Выйти</a></li>
      </ul>
      <ul class="user-basket">
-      <li><a href="" class="compare">Сравнить</a></li>
-      <li><a href="" class="basket">Корзина</a></li>
+      <li><a href="#" class="compare">Сравнить</a></li>
+      <li><a href="#" class="basket">Корзина</a></li>
      </ul>
      <section class="main-nav">
       <ul class="catalog-link">
@@ -46,12 +49,20 @@
       </ul>
      </section>
      </div>
-     </header>
      </nav>
+     </header>
   		<div class="slider-container">
-  			<section class="slider visually-hidden">
+        <div class="controls">
+          <label for="one"></label>
+          <label for="two"></label>
+          <label for="three"></label>
+          <input type="radio" name="control" id="one">
+          <input type="radio" name="control" id="two">
+          <input type="radio" name="control" id="three">
+        </div>
+  			<div class="slider slider-one visually-hidden">
   				<img src="img/monopod.png" alt="Монопод" width="200px" height="150px">
-  				<p class="slider-title">Делай селфи,как Бен Стиллер</p>
+  				<p class="slider-lead">Делай селфи,как Бен Стиллер</p>
   				<p class="descr">Самая длинная палка для селфи доступна в нашем магазине.Восемь(Восемь,Карл) метров длиной и весом всего 5 килограмм.</p>
   				<a href="#" class="more">Подробнее</a>
   				<table class="characteristics">
@@ -66,8 +77,8 @@
   						<td>Материал</td>
   					</tr>
   				</table>
-  			</section>
-        <section class="slider visually-hidden">
+  		</div>
+     <div class="slider slider-two visually-hidden">
           <img src="img/hours.png" alt="Фитнес-браслет" width="200px" height="150px">
           <p class="slider-title">Худеем правильно!</p>
           <p class="descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия о соблюдать диету.</p>
@@ -80,8 +91,8 @@
               <td>Без подзарядки</td>
             </tr>
           </table>
-        </section>
-        <section class="slider visually-hidden">
+        </div>
+        <div class="slider slider-three visually-hidden">
           <img src="img/quadro.png" alt="Монопод" width="200px" height="150px">
           <p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
           <p class="descr">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -96,49 +107,47 @@
               <td>Радиус поражения</td>
             </tr>
           </table>
-        </section>
   		</div>
+    </div>
   		<section class="goods-list">
-        <ul>
+       <ul>
   			<li><a href="#">Виртуальная реальность</a></li>
   			<li><a href="#">Моноподы для селфи</a></li>
   			<li><a href="#">Экшн-камеры</a></li>
   			<li><a href="#">Фитнес-браслеты</a></li>
   			<li><a href="#">Умные часы</a></li>
   			<li><a href="#">Квадрокоптеры</a></li>
-  		</section>
-     </ul>
+       </ul>
+     </section>
   		<section class="services">
-  			<div class="service-control">
+         <h2 class="hidden-vis">delivery</h2>
   					<label for="delivery">Доставка</label>
             <input type="radio" name="control" id="delivery">
+            <div class="service-descr">
+          <h3 class="descr-title">Доставка</h3>
+          <p class="descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
   					<label for="quarantee">Гарантия</label>
             <input type="radio" name="control" id="quarantee">
-  					<label for="credit">Кредит</label>
-            <input type="radio" id="credit" name="control">
-  			</div>
-  			<section class="service-descr">
-          <h2 class="hidden-vis">delivery</h2>
-  				<h3 class="descr-title">Доставка</h3>
-  				<p class="descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-  			</section>
-        <section class="service-descr">
+        <div class="service-descr">
           <h2 class="hidden-vis">Гарантия</h2>
           <h3 class="descr-title">Гарантия</h3>
           <p class="descr">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </section>
-        <section class="service-descr">
+        </div>
+  			<label for="credit">Кредит</label>
+        <input type="radio" id="credit" name="control">
+        <div class="service-descr">
           <h2 class="hidden-vis">Кредит</h2>
           <h3 class="descr-title">Кредит</h3>
           <p class="descr">Залезть в долдговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </section>
+        </div>
   		</section>
   		<section class="mark-container">
   			<ul class="marks-list">
-  				<li><a href="dji.html"></a></li>
-  				<li><a href="sp.html"></a></li>
-  				<li><a href="goPro.html"></a></li>
-  				<li><a href="vive.html"></a></li>
+  				<li><a href="#">DJI</a></li>
+  				<li><a href="#">SP Gadjets</a></li>
+  				<li><a href="#">GoPro</a></li>
+  				<li><a href="#">Vive</a></li>
   			</ul>
   		</section>
   		<section class="container">
@@ -154,15 +163,17 @@
   					<li><a href="#">Подробнее о нас</a></li>
   				</ul>
   			</div>
-  			<section class="contacts">
+  			<div class="contacts">
   				<h3 class="contacts-title">Контакты</h3>
   				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
   				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9145.497372858707!2d82.98860988096918!3d55.03665651943432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfef265bd82c17%3A0x6262d8eb811b0626!2z0JrQvtC90YLQuNC90LXQvdGC!5e0!3m2!1sru!2sru!4v1533923479781" frameborder="0" width="600" height="450" style="border:0" allowfullscreen=""></iframe>
   				<a href="#" class="send-us btn">Напишите нам</a>
-  			</section>
+  			</div>
   		</section>
   		<footer class="page-footer">
-  			<a href="index.html"><img src="img/device.svg"></a>
+        <div class="footer-logo">
+  			<img src="img/device.svg" alt="Device">
+        </div>
   			<p class="adress">г. Москва, ул. Строителей, 15</p>
   			<section class="center-section">
   				<ul class="footer-menu">
@@ -170,22 +181,24 @@
   					<li><b>Гарантия</b></li>
   					<li><b>Контакты</b></li>
   				</ul>
-  				<section class="social">
+  				<div class="social">
   					<ul class="list-social">
   						<li><a href="#"></a></li>
   						<li><a href="#"></a></li>
   						<li><a href="#"></a></li>
   					</ul>
-  				</section>
+  				</div>
   			</section>
   			<ul class="footer-menu">
-  				<li class="user-logout"><a href="#">Войти</a></li>
+  				<li class="user-logout"><a href="#">Выйти</a></li>
+          <li><a href="#">Валентин Петухов</a></li>
+        </ul>
+        <ul class="footer-basket">
   				<li><a href="#" class="compare">Сравнить</a></li>
   				<li><a href="#" class="basket">Корзина</a></li>
   			</ul>
-  			<a class="phone-number" href="tel: +7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
+  			<a class="phone-number" href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
   			<a href="htmlacademy.ru"><img src="img/HTML Academy.png"></a>
   		</footer>
-  	</div>
   </body>
 </html>
