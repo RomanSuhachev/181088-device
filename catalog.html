@@ -8,8 +8,8 @@
 		<header class="main-header">
 			<nav class="header-nav">
 				<div class="wrapper">
-					<div class="logo"><h2 class="main-title title-hidden"><a href="index.html"><img src="img/logo.svg" alt="DEVICE"></a></h2></div>
-					<form action="#" method="_POST">
+					<div class="logo"><h2 class="main-title title-hidden"><a href="index.html"><img src="img/svg/header-logo.svg" alt="DEVICE"></a></h2></div>
+					<form action="#" method="POST">
 						<div class="search-container">
 							<input type="text" placeholder="Поиск по сайту"><button class="btn-search" type="submit">Поиск</button>
 						</div>
@@ -65,7 +65,33 @@
 				<div class="wrapper">
 					<h2 class="filter-title">Фильтр:</h2>
 					<form action="" class="filter-params">
-
+						<div class="filter-container">
+							<div class="price">
+								<label for="range-price">Стоимость</label>
+								<input type="range" id="range-price" min="0">
+							</div>
+							<div class="color">
+								<h3>Цвет</h3>
+								<label for="black">Черный</label>
+								<input type="checkbox" name="colors" id="black" value="black">
+								<label for="white">Белый</label>
+								<input type="checkbox" name="colors" id="white" value="white">
+								<label for="blue">Синий</label>
+								<input type="checkbox" name="colors" id="blue" value="blue">
+								<label for="red">Красный</label>
+								<input type="checkbox" name="colors" id="red" value="red">
+								<label for="purple">Розовый</label>
+								<input type="checkbox" name="colors" id="purple" value="purple">
+							</div>
+							<div class="functions">
+								<h3>Bluetooth</h3>
+								<label for="one">Есть</label>
+								<input type="checkbox" name="function" id="one" value="yes">
+								<label for="two">Нет</label>
+								<input type="checkbox" name="function" id="two" value="no">
+							</div>
+							<input type="submit" class="submit-btn" value="показать">
+						</div>
 					</form>
 				</div>
 			</div>
@@ -81,7 +107,7 @@
 					</ul>
 					<div class="goods-wrapper">
 						<article class="goods-block block1">
-							<div class="blocks-body"><img src="#" alt="Селфи палка">
+							<div class="blocks-body"><img src="img/item-1.jpg" width="360px" height="380px" alt="Селфи палка">
 							</div>
 							<footer class="footer blocks-footer">
 								<div class="goods-name"><h2>Любительская селфи-палка</h2>
@@ -91,7 +117,7 @@
 							<div class="links-hidden"><a href="#">В корзину</a><a href="#">Добавить к сравнению</a></div>
 						</article>
 						<article class="goods-block block2">
-							<div class="blocks-body"><img src="#" alt="Селфи палка"></div>
+							<div class="blocks-body"><img src="img/item-2.jpg" width="360px" height="380px" alt="Селфи палка"></div>
 								<footer class="footer blocks-footer">
 									<div class="goods-name"><h2>Профессиональная селфи-палка</h2>
 										<span class="price">1500 руб.</span>
@@ -100,7 +126,7 @@
 								<div class="links-hidden"><a href="#">В корзину</a><a href="#">Добавить к сравнению</a></div>
 							</article>
 							<article class="goods-block block3">
-								<div class="blocks-body"><img src="#" alt="Селфи палка"></div>
+								<div class="blocks-body"><img src="img/item-3.jpg" width="360px" height="380px" alt="Селфи палка"></div>
 								<footer class="footer blocks-footer">
 									<div class="goods-name"><h2>Непотопляемая селфи-палка</h2>
 										<span class="price">2500 руб.</span>
@@ -109,7 +135,7 @@
 								<div class="links-hidden"><a href="#">В корзину</a><a href="#">Добавить к сравнению</a></div>
 							</article>
 							<article class="goods-block block4">
-								<div class="blocks-body"><img src="#" alt="Селфи палка"></div>
+								<div class="blocks-body"><img src="img/item-4.jpg" width="360px" height="380px" alt="Селфи палка"></div>
 								<footer class="footer blocks-footer">
 									<div class="goods-name"><h2>Селфи-палка &laquo; Следуй за мной &raquo;</h2>
 										<span class="price">4900 руб.</span>
@@ -131,7 +157,7 @@
 				</nav>
 			</main>
 			<footer class="page-footer">
-				<a href="index.html"><img src="img/device.svg" alt="Device"></a>
+				<a href="index.html"><img src="img/svg/logo-footer.svg" alt="Device"></a>
 				<p class="adress">г. Москва, ул. Строителей, 15</p>
 				<div class="center-section">
 					<ul class="footer-menu">
