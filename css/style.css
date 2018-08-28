@@ -1,0 +1,327 @@
+/* Шрифты */
+@font-face {
+	font-family: Gilroy;
+	src:url(fonts/Gilroy.ttf);
+}
+@font-face {
+	font-family: OpenSans;
+	src:url(fonts/Opensans/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: OpenSans-Light;
+	src:url(fonts/Opensans/OpenSans-Light.ttf);
+}
+
+/* Контентная часть */
+html {
+	box-sizing:border-box;
+}
+.main-header {
+	background-color:rgb(247, 226, 150);
+}
+.main-nav .catalog-link, .main-nav .header-menu {
+  font-style:'Opensans', sans-serif;
+  font-size:18pt;
+  line-height:24pt;
+  list-style:none;
+}
+.catalog-link a, .header-menu a {
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+}
+.search-input::placeholder, .user-login a, .user-basket a {
+	font-family:'OpenSans-Light', sans-serif;
+	font-weight:normal;
+	text-decoration:none;
+	font-size:15px;
+	line-height:30pt;
+}
+.user-login a, .user-basket a {
+	color:black;
+}
+.user-login, .user-basket {
+	list-style:none;
+}
+.catalog-link .drop-down {
+	list-style:none;
+	padding:0px;
+	font-family:'OpenSans-Light', sans-serif;
+	font-weight:normal;
+	font-size:15pt;
+	line-height:36pt;
+}
+.slider-lead {
+	font-family:Gilroy;
+	font-size:47pt;
+	line-height:56pt;
+	font-weight:bold;
+}
+.descr, .about-us p, .contacts p {
+	font-family:'Open Sans', sans-serif;
+	font-size:15pt;
+	line-height:30pt;
+	font-weight:lighter;
+	color:#696969;
+}
+.more {
+	font-family:'Gilroy', sans-serif;
+	font-size:18pt;
+	line-height:24pt;
+	font-weight:bold;
+}
+.characteristics tr:first-child {
+font-family:'Gilroy', sans-serif;
+font-size:36pt;
+line-height:48pt;
+font-weight:lighter;
+}
+.characteristics tr:nth-of-type(2) {
+	font-family:'Open Sans', sans-serif;
+	font-size:13pt;
+	line-height:20pt;
+	font-weight:lighter;
+	color:#696969;
+}
+.goods-list ul {
+	list-style:none;
+}
+.popular li a {
+	font-family:'Gilroy', sans-serif;
+	font-size:18pt;
+	line-height:24pt;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000000;
+}
+.services .descr-title {
+	color:#0000000;
+	font-size:47pt;
+	line-height:48pt;
+	font-family:'Gilroy', sans-serif;
+	font-weight:bold;
+}
+.about-us .about-title, .contacts .contacts-title {
+	font-family:'Gilroy', sans-serif;
+	font-size:47pt;
+	line-height:48pt;
+	font-weight:bold;
+	color:#000000;
+}
+.list-partner li {
+	font-size:15pt;
+	font-family:'Open Sans', sans-serif;
+	line-height:30pt;
+	font-weight:bold;
+}
+.btn {
+	font-family:'Gilroy', sans-serif;
+	font-size:18pt;
+	line-height:24pt;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000000;
+}
+.page-footer {
+	background-color:#464646;
+}
+.page-footer .adress {
+	font-family:'Open Sans', sans-serif;
+	font-size:15pt;
+	line-height:30pt;
+	color:#ffff;
+}
+.page-footer ul {
+	list-style:none;
+}
+.footer-basket li a, .footer-menu li a {
+	font-family:'Open Sans', sans-serif;
+	font-size:15pt;
+	line-height:36pt;
+	color:#ffff;
+	text-decoration:none;
+}
+.footer-service li a {
+	font-family:'Gilroy', sans-serif;
+	font-size:18pt;
+	line-height:24pt;
+	color:#ffff;
+	font-weight:bold;
+	text-decoration:none;
+}
+.phone-number {
+	font-family:'Open Sans', sans-serif;
+	color:#ffff;
+	font-size:15pt;
+	line-height:30pt;
+	text-decoration:none;
+	font-weight:lighter;
+}
+.list-social li {
+	display: inline-block;
+}
+.list-social a {
+	display: block;
+	background-color:#7e7e7e;
+	width:50px;
+	height:50px;
+}
+.modal label, .modal p {
+	font-family:'Gilroy', sans-serif;
+	color:#000000;
+	font-size:18pt;
+	line-height:24pt;
+	font-weight:bold;
+}
+[type="text"],[type="mail"], textarea {
+	background-color:#f2f2f2;
+	border:none;
+	font-family:'Open Sans', sans-serif;
+	font-weight:lighter;
+	font-size:14pt;
+	line-height:18pt;
+}
+.submit-btn {
+	font-family:'Gilroy',sans-serif;
+	font-size:18pt;
+	line-height:24pt;
+	font-weight:bold;
+}
+.user-login-footer, .user-basket-footer {
+	font-family:'Open Sans', sans-serif;
+	font-size:15pt;
+	line-height:30pt;
+	font-weight:lighter;
+}
+.user-login-footer a, .user-basket-footer a{
+color:#ffff;
+font-family:'Open Sans', sans-serif;
+font-size:15pt;
+line-height:30pt;
+font-weight:lighter;
+text-decoration:none;
+}
+.filter-title {
+	font-family:'Open Sans', sans-serif;
+	font-size:16pt;
+	line-height:24pt;
+	font-weight:bold;
+	background-color:#dcdcdc;
+}
+.nav-list {
+	list-style:none;
+}
+.nav-list a {
+	font-family:'Open Sans', sans-serif;
+	font-weight:lighter;
+	font-size:14pt;
+	line-height:24pt;
+	text-decoration:none;
+	color:#cacaca;
+}
+.price label {
+	font-family:'Open Sans', sans-serif;
+	font-size:18pt;
+	line-height:24pt;
+	font-weight:bold;
+	color:#000000;
+}
+.color h3, .functions h3 {
+	font-family:'Gilroy', sans-serif;
+	font-size:18pt;
+	line-height:24pt;
+	font-weight:bold;
+	color:#000000;
+}
+.color label, .functions label {
+	font-family:'Open Sans', sans-serif;
+	font-size:15pt;
+	line-height:40pt;
+	font-weight:lighter;
+	color:#000000;
+}
+.submit-btn {
+	font-family:'Gilroy', sans-serif;
+	font-size:18pt;
+	line-height:auto;
+	font-weight:bold;
+	text-transform:uppercase;
+	border:none;
+	background-color:#f0c52e;
+}
+.goods-container h2 {
+	font-family:'Gilroy', sans-serif;
+	font-size:16pt;
+	line-height:24pt;
+	font-weight:bold;
+	color:#000000;
+}
+.title-list {
+	list-style:none;
+}
+.title-list a {
+	font-family:'Open Sans', sans-serif;
+	font-size:14pt;
+	line-height: 18pt;
+	font-weight:normal;
+	color:#a4a4a4;
+	text-decoration:none;
+}
+.goods-container h2, .goods-container .title-list {
+	background-color:#ebebeb;
+}
+/* Добавил марджин сверху для того, чтобы можно было отделить каждую карточку друг от друга */
+.goods-block {
+	background-color:#efefef;
+	margin-top:10px;
+}
+.goods-name h2 {
+	font-family:'Gilroy', sans-serif;
+	font-weight:bold;
+	font-size:18pt;
+	line-height:24pt;
+	color:#000000;
+}
+.blocks-footer .price {
+	font-family:'Gilroy', sans-serif;
+	font-size:16pt;
+	line-height:24pt;
+	color:#b5b5b5;
+	background-color:#ffff;
+}
+.paginator li a {
+	font-family:'Gilroy', sans-serif;
+	font-size:16pt;
+	line-height:24pt;
+	font-weight:bold;
+	color:#a4a4a4;
+	text-decoration:none;
+}
+.paginator {
+	list-style:none;
+}
+.paginator li:first-child a, .paginator li:last-child a {
+	font-family:'Gilroy', sans-serif;
+	font-weight:bold;
+	font-size:16pt;
+	line-height:24pt;
+	color:#000000;
+	text-decoration:none;
+}
+.add {
+	background-color:#f0c52e;
+	font-family:'Gilroy', sans-serif;
+	font-size:18pt;
+	line-height:24pt;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+}
+.add2 {
+	font-family:'Open Sans', sans-serif;
+	font-weight:lighter;
+	font-size:13pt;
+	line-height:36pt;
+	color:#bdbdbd;
+	text-decoration:none;
+}

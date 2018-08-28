@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<title>HTML Academy: Девайс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -13,7 +15,7 @@
 			  </div>
 				<form action="#" class="search-form" method="GET">
 					<div class="search-container">
-						<input type="text" placeholder="Поиск по сайту"><button class="btn-search" type="submit">Поиск</button>
+						<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Поиск</button>
 					</div>
 				</form>
 				<ul class="user-login">
@@ -79,7 +81,7 @@
 		</div>
 		<div class="slider slider-two slider-hidden">
 			<img src="img/slider-2.png" alt="Фитнес-браслет" width="345px" height="485px">
-			<p class="slider-title">Худеем правильно!</p>
+			<p class="slider-lead">Худеем правильно!</p>
 			<p class="descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия о соблюдать диету.</p>
 			<a href="#" class="more">Подробнее</a>
 			<table class="characteristics">
@@ -93,7 +95,7 @@
 		</div>
 		<div class="slider slider-three slider-hidden">
 			<img src="img/slider-3.png" alt="Монопод" width="526px" height="334px">
-			<p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
+			<p class="slider-lead">Порхает как бабочка, жалит как пчела!</p>
 			<p class="descr">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 			<a href="#" class="more">Подробнее</a>
 			<table class="characteristics">
@@ -110,7 +112,7 @@
 	</div>
 	<section class="goods-list">
 		<h2 class="hidden-vis">Популярные категории</h2>
-		<ul>
+		<ul class="popular">
 			<li><a href="#">Виртуальная реальность</a></li>
 			<li><a href="#">Моноподы для селфи</a></li>
 			<li><a href="#">Экшн-камеры</a></li>
@@ -163,7 +165,7 @@
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
 			<div class="about-us">
-				<a href="#">Подробнее о нас</a>
+				<a href="#" class="btn about-btn">Подробнее о нас</a>
 			</div>
 		</div>
 		<div class="contacts">
@@ -181,16 +183,16 @@
 		</div>
 		<p class="adress">г. Москва, ул. Строителей, 15</p>
 		<div class="center-section">
-			<ul class="footer-menu">
+			<ul class="footer-service">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<div class="social">
 				<ul class="list-social">
-					<li><a href="#">Фэйсбук</a></li>
-					<li><a href="#">Инстаграмм</a></li>
-					<li><a href="#">Твиттер</a></li>
+					<li><a href="#" class="fecebook">Фэйсбук</a></li>
+					<li><a href="#" class="instagram">Инстаграмм</a></li>
+					<li><a href="#" class="twitter">Твиттер</a></li>
 				</ul>
 			</div>
 		</div>
