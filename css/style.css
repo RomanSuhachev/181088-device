@@ -53,17 +53,9 @@ body {
 	padding:0px;
 }
 .slider .descr, .service-descr .descr, .about-us p {
-	font-family:inherit;
-	font-size:inherit;
-	line-height:inherit;
-	font-weight:inherit;
 	color:#464646;
 }
 .page-footer .adress, .page-footer .phone-number {
-	font-family:inherit;
-	font-size:inherit;
-	line-height:inherit;
-	font-weight:inherit;
 	color:#ffff;
 }
 .phone-number {
@@ -99,8 +91,6 @@ body {
 	font-weight:lighter;
 }
 .characteristics tr:nth-of-type(2) {
-	font-family:inherit;
-	font-style:inherit;
 	font-size:13px;
 	line-height:20px;
 	font-weight:lighter;
@@ -108,7 +98,6 @@ body {
 }
 .characteristics tr:first-child {
 	font-family:'gilroylight', 'Arial', 'PT sans', sans-serif;
-	font-style:inherit;
 	font-size:36px;
 	line-height:48px;
 	color:#000000;
