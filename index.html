@@ -7,120 +7,124 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
-		<nav class="header-nav">
-			<div class="wrapper">
-				<div class="logo">
-					<a href="#"><img src="img/svg/header-logo.svg" alt="DEVICE"></a>
-			  </div>
-				<form action="#" class="search-form" method="GET">
-					<div class="search-container">
-						<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Найти</button>
+	<div class="header-container container">
+		<header class="main-header">
+			<nav class="header-nav">
+				<div class="wrapper">
+					<div class="logo">
+						<h1 class="header-logo"><img src="img/svg/header-logo.svg" alt="DEVICE"></h1>
 					</div>
-				</form>
-				<ul class="user-login">
-					<li class="login"><a href="#">Войти</a></li>
-				</ul>
-				<ul class="user-basket">
-					<li><a href="#" class="compare">Сравнить</a></li>
-					<li><a href="#" class="basket">Корзина</a></li>
-				</ul>
-				<div class="main-nav">
-					<ul class="catalog-link">
-						<li><a href="#">Каталог товаров</a>
-							<ul class="drop-down">
-								<li><a href="#">Виртуальная реальность</a></li>
-								<li><a href="catalog.html">Моноподы для селфи</a></li>
-								<li><a href="#">Экшн-камеры</a></li>
-							</ul>
-							<ul class="drop-down">
-								<li><a href="#">Фитнес-браслеты</a></li>
-								<li><a href="#">Умные часы</a></li>
-							</ul>
-							<ul class="drop-down">
-								<li><a href="#">Квадрокоптеры</a></li>
-							</ul>
+					<div class="menu-container">
+					<form action="#" class="search-form" method="GET">
+						<div class="search-container">
+							<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Найти</button>
+						</div>
+					</form>
+					<ul class="user-login list-graps">
+						<li class="login"><a href="#" class="log-in">Войти</a></li>
+					</ul>
+					<ul class="user-basket list-graps">
+						<li><a href="#" class="compare">Сравнить</a></li>
+						<li><a href="#" class="basket">Корзина</a></li>
+					</ul>
+					</div>
+					<div class="main-nav">
+						<ul class="catalog-link list-graps">
+							<li><a href="#" class="catalog">Каталог товаров</a>
+								<ul class="drop-down list-graps">
+									<li><a href="#">Виртуальная реальность</a></li>
+									<li><a href="catalog.html">Моноподы для селфи</a></li>
+									<li><a href="#">Экшн-камеры</a></li>
+								</ul>
+								<ul class="drop-down list-graps">
+									<li><a href="#">Фитнес-браслеты</a></li>
+									<li><a href="#">Умные часы</a></li>
+								</ul>
+								<ul class="drop-down list-graps">
+									<li><a href="#">Квадрокоптеры</a></li>
+								</ul>
 
-						</li>
-					</ul>
-					<ul class="header-menu">
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
+							</li>
+						</ul>
+						<ul class="header-menu list-graps">
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Гарантия</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
 				</div>
+			</nav>
+		</header>
+		<div class="slider-container">
+			<div class="controls">
+				<label for="one"></label>
+				<label for="two"></label>
+				<label for="three"></label>
+				<input type="radio" name="control" id="one">
+				<input type="radio" name="control" id="two">
+				<input type="radio" name="control" id="three">
 			</div>
-		</nav>
-	</header>
-	<div class="slider-container">
-		<div class="controls">
-			<label for="one"></label>
-			<label for="two"></label>
-			<label for="three"></label>
-			<input type="radio" name="control" id="one">
-			<input type="radio" name="control" id="two">
-			<input type="radio" name="control" id="three">
+			<div class="slider slider-one slider-hidden">
+				<img src="img/slider-1.png" alt="Монопод" width="384px" height="486px">
+				<p class="slider-lead">Делай селфи,как Бен Стиллер</p>
+				<p class="descr">Самая длинная палка для селфи доступна в нашем магазине.Восемь(Восемь,Карл) метров длиной и весом всего 5 килограмм.</p>
+				<a href="#" class="more btn">Подробнее</a>
+				<table class="characteristics">
+					<tr>
+						<td>8,5 м</td>
+						<td>5 кг</td>
+						<td>Карбон</td>
+					</tr>
+					<tr>
+						<td>Длина палки</td>
+						<td>Вес палки</td>
+						<td>Материал</td>
+					</tr>
+				</table>
+			</div>
+			<div class="slider slider-two slider-hidden">
+				<img src="img/slider-2.png" alt="Фитнес-браслет" width="345px" height="485px">
+				<p class="slider-lead">Худеем правильно!</p>
+				<p class="descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия о соблюдать диету.</p>
+				<a href="#" class="more btn">Подробнее</a>
+				<table class="characteristics">
+					<tr>
+						<td>48 часов</td>
+					</tr>
+					<tr>
+						<td>Без подзарядки</td>
+					</tr>
+				</table>
+			</div>
+			<div class="slider slider-three slider-hidden">
+				<img src="img/slider-3.png" alt="Монопод" width="526px" height="334px">
+				<p class="slider-lead">Порхает как бабочка, жалит как пчела!</p>
+				<p class="descr">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+				<a href="#" class="more btn">Подробнее</a>
+				<table class="characteristics">
+					<tr>
+						<td>800 м</td>
+						<td>50 м</td>
+					</tr>
+					<tr>
+						<td>Дальность полета</td>
+						<td>Радиус поражения</td>
+					</tr>
+				</table>
+			</div>
 		</div>
-		<div class="slider slider-one slider-hidden">
-			<img src="img/slider-1.png" alt="Монопод" width="384px" height="486px">
-			<p class="slider-lead">Делай селфи,как Бен Стиллер</p>
-			<p class="descr">Самая длинная палка для селфи доступна в нашем магазине.Восемь(Восемь,Карл) метров длиной и весом всего 5 килограмм.</p>
-			<a href="#" class="more btn">Подробнее</a>
-			<table class="characteristics">
-				<tr>
-					<td>8,5 м</td>
-					<td>5 кг</td>
-					<td>Карбон</td>
-				</tr>
-				<tr>
-					<td>Длина палки</td>
-					<td>Вес палки</td>
-					<td>Материал</td>
-				</tr>
-			</table>
-		</div>
-		<div class="slider slider-two slider-hidden">
-			<img src="img/slider-2.png" alt="Фитнес-браслет" width="345px" height="485px">
-			<p class="slider-lead">Худеем правильно!</p>
-			<p class="descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия о соблюдать диету.</p>
-			<a href="#" class="more btn">Подробнее</a>
-			<table class="characteristics">
-				<tr>
-					<td>48 часов</td>
-				</tr>
-				<tr>
-					<td>Без подзарядки</td>
-				</tr>
-			</table>
-		</div>
-		<div class="slider slider-three slider-hidden">
-			<img src="img/slider-3.png" alt="Монопод" width="526px" height="334px">
-			<p class="slider-lead">Порхает как бабочка, жалит как пчела!</p>
-			<p class="descr">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-			<a href="#" class="more btn">Подробнее</a>
-			<table class="characteristics">
-				<tr>
-					<td>800 м</td>
-					<td>50 м</td>
-				</tr>
-				<tr>
-					<td>Дальность полета</td>
-					<td>Радиус поражения</td>
-				</tr>
-			</table>
-		</div>
+		<section class="goods-list">
+			<h2 class="hidden-vis">Популярные категории</h2>
+			<ul class="popular list-graps">
+				<li><a href="#" class="popular-link vr">Виртуальная реальность</a></li>
+				<li><a href="catalog.html" class="popular-link selfie">Моноподы для селфи</a></li>
+				<li><a href="#" class="popular-link action-camera">Экшн-камеры</a></li>
+				<li><a href="#" class="popular-link fitness">Фитнес-браслеты</a></li>
+				<li><a href="#" class="popular-link smart">Умные часы</a></li>
+				<li><a href="#" class="popular-link quadro">Квадрокоптеры</a></li>
+			</ul>
+		</section>
 	</div>
-	<section class="goods-list">
-		<h2 class="hidden-vis">Популярные категории</h2>
-		<ul class="popular">
-			<li><a href="#">Виртуальная реальность</a></li>
-			<li><a href="catalog.html">Моноподы для селфи</a></li>
-			<li><a href="#">Экшн-камеры</a></li>
-			<li><a href="#">Фитнес-браслеты</a></li>
-			<li><a href="#">Умные часы</a></li>
-			<li><a href="#">Квадрокоптеры</a></li>
-		</ul>
-	</section>
 	<section class="services">
 		<div class="controls-wrapper">
 			<h2 class="hidden-vis">Наши преимущества</h2>
@@ -144,62 +148,64 @@
 			<p class="descr">Залезть в долдговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 		</div>
 	</section>
-	<section class="mark-container">
-		<h2 class="hidden-vis">Бренды</h2>
-		<ul class="marks-list">
-			<li><a href="#">DJI</a></li>
-			<li><a href="#">SP Gadjets</a></li>
-			<li><a href="#">GoPro</a></li>
-			<li><a href="#">Vive</a></li>
-		</ul>
-	</section>
-	<section class="container">
-		<h2 class="hidden-vis">Мы и наши партнеры</h2>
-		<div class="about-us">
-			<h3 class="about-title">О нас</h3>
-			<p>Огромный выбор гаджетов не оставит равнодушным гика,который есть в каждом из нас.</p>
-			<p class="text-2">МЫ можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
-			<ul class="list-partner">
-				<li>Деловые Линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
+	<div class="container">
+		<section class="mark-container">
+			<h2 class="hidden-vis">Бренды</h2>
+			<ul class="marks-list list-graps">
+				<li><a href="#" class="marks-link dji">DJI</a></li>
+				<li><a href="#" class="marks-link sp-gadjets">SP Gadjets</a></li>
+				<li><a href="#" class="marks-link gopro">GoPro</a></li>
+				<li><a href="#" class="marks-link vive">Vive</a></li>
 			</ul>
+		</section>
+		<section class="container-partners">
+			<h2 class="hidden-vis">Мы и наши партнеры</h2>
 			<div class="about-us">
-				<a href="#" class="btn about-btn">Подробнее о нас</a>
+				<h3 class="about-title">О нас</h3>
+				<p>Огромный выбор гаджетов не оставит равнодушным гика,который есть в каждом из нас.</p>
+				<p class="text-2">МЫ можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
+				<ul class="list-partner list-graps">
+					<li>Деловые Линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<div class="about-us">
+					<a href="#" class="btn about-btn">Подробнее о нас</a>
+				</div>
 			</div>
-		</div>
-		<div class="contacts">
-			<h3 class="contacts-title">Контакты</h3>
-			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9145.497372858707!2d82.98860988096918!3d55.03665651943432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfef265bd82c17%3A0x6262d8eb811b0626!2z0JrQvtC90YLQuNC90LXQvdGC!5e0!3m2!1sru!2sru!4v1533923479781" frameborder="0" width="600" height="450" style="border:0" allowfullscreen=""></iframe>
-			<div class="send">
-				<a href="#" class="send-us btn">Напишите нам</a>
+			<div class="contacts">
+				<h3 class="contacts-title">Контакты</h3>
+				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9145.497372858707!2d82.98860988096918!3d55.03665651943432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfef265bd82c17%3A0x6262d8eb811b0626!2z0JrQvtC90YLQuNC90LXQvdGC!5e0!3m2!1sru!2sru!4v1533923479781" frameborder="0" width="600" height="450" style="border:0" allowfullscreen=""></iframe>
+				<div class="send">
+					<a href="#" class="send-us btn">Напишите нам</a>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 	<footer class="page-footer">
 		<div class="footer-logo">
 			<img src="img/svg/logo-footer.svg" alt="Device">
 		</div>
 		<p class="adress">г. Москва, ул. Строителей, 15</p>
 		<div class="center-section">
-			<ul class="footer-service">
+			<ul class="footer-service list-graps">
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<div class="social">
-				<ul class="list-social">
+				<ul class="list-social list-graps">
 					<li><a href="#" class="facebook">Фэйсбук</a></li>
 					<li><a href="#" class="instagram">Инстаграмм</a></li>
 					<li><a href="#" class="twitter">Твиттер</a></li>
 				</ul>
 			</div>
 		</div>
-		<ul class="footer-menu">
+		<ul class="footer-menu list-graps">
 			<li class="user-logout"><a href="#">Войти</a></li>
 		</ul>
-		<ul class="footer-basket">
+		<ul class="footer-basket list-graps">
 			<li><a href="#" class="compare">Сравнить</a></li>
 			<li><a href="#" class="basket">Корзина</a></li>
 		</ul>
