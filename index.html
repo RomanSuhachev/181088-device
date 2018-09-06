@@ -15,35 +15,34 @@
 						<h1 class="header-logo"><img src="img/svg/header-logo.svg" alt="DEVICE"></h1>
 					</div>
 					<div class="menu-container">
-					<form action="#" class="search-form" method="GET">
-						<div class="search-container">
-							<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Найти</button>
-						</div>
-					</form>
-					<ul class="user-login list-graps">
-						<li class="login"><a href="#" class="log-in">Войти</a></li>
-					</ul>
-					<ul class="user-basket list-graps">
-						<li><a href="#" class="compare">Сравнить</a></li>
-						<li><a href="#" class="basket">Корзина</a></li>
-					</ul>
+						<form action="#" class="search-form" method="GET">
+							<div class="search-container">
+								<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Найти</button>
+							</div>
+						</form>
+						<ul class="user-login list-graps">
+							<li class="login"><a href="#" class="log-in">Войти</a></li>
+						</ul>
+						<ul class="user-basket list-graps">
+							<li><a href="#" class="compare">Сравнить</a></li>
+							<li><a href="#" class="basket">Корзина</a></li>
+						</ul>
 					</div>
 					<div class="main-nav">
 						<ul class="catalog-link list-graps">
 							<li><a href="#" class="catalog">Каталог товаров</a>
-								<ul class="drop-down list-graps">
+								<ul class="drop-down list-graps first">
 									<li><a href="#">Виртуальная реальность</a></li>
 									<li><a href="catalog.html">Моноподы для селфи</a></li>
 									<li><a href="#">Экшн-камеры</a></li>
 								</ul>
-								<ul class="drop-down list-graps">
+								<ul class="drop-down list-graps second">
 									<li><a href="#">Фитнес-браслеты</a></li>
 									<li><a href="#">Умные часы</a></li>
 								</ul>
-								<ul class="drop-down list-graps">
+								<ul class="drop-down list-graps thirty">
 									<li><a href="#">Квадрокоптеры</a></li>
-								</ul>
-
+								</ul>s
 							</li>
 						</ul>
 						<ul class="header-menu list-graps">
@@ -64,23 +63,25 @@
 				<input type="radio" name="control" id="two">
 				<input type="radio" name="control" id="three">
 			</div>
-			<div class="slider slider-one slider-hidden">
+			<div class="slider slider-one">
 				<img src="img/slider-1.png" alt="Монопод" width="384px" height="486px">
-				<p class="slider-lead">Делай селфи,как Бен Стиллер</p>
-				<p class="descr">Самая длинная палка для селфи доступна в нашем магазине.Восемь(Восемь,Карл) метров длиной и весом всего 5 килограмм.</p>
-				<a href="#" class="more btn">Подробнее</a>
-				<table class="characteristics">
-					<tr>
-						<td>8,5 м</td>
-						<td>5 кг</td>
-						<td>Карбон</td>
-					</tr>
-					<tr>
-						<td>Длина палки</td>
-						<td>Вес палки</td>
-						<td>Материал</td>
-					</tr>
-				</table>
+				<div class="slider-description">
+					<p class="slider-lead">Делай селфи,как Бен Стиллер</p>
+					<p class="descr">Самая длинная палка для селфи доступна в нашем магазине.Восемь(Восемь,Карл) метров длиной и весом всего 5 килограмм.</p>
+					<a href="#" class="more btn">Подробнее</a>
+					<table class="characteristics">
+						<tr>
+							<td>8,5 м</td>
+							<td>5 кг</td>
+							<td>Карбон</td>
+						</tr>
+						<tr>
+							<td>Длина палки</td>
+							<td>Вес палки</td>
+							<td>Материал</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 			<div class="slider slider-two slider-hidden">
 				<img src="img/slider-2.png" alt="Фитнес-браслет" width="345px" height="485px">
@@ -116,36 +117,38 @@
 		<section class="goods-list">
 			<h2 class="hidden-vis">Популярные категории</h2>
 			<ul class="popular list-graps">
-				<li><a href="#" class="popular-link vr">Виртуальная реальность</a></li>
-				<li><a href="catalog.html" class="popular-link selfie">Моноподы для селфи</a></li>
-				<li><a href="#" class="popular-link action-camera">Экшн-камеры</a></li>
-				<li><a href="#" class="popular-link fitness">Фитнес-браслеты</a></li>
-				<li><a href="#" class="popular-link smart">Умные часы</a></li>
-				<li><a href="#" class="popular-link quadro">Квадрокоптеры</a></li>
+				<li><a href="#" class="popular-link vr"><span class="vr-wrapper"></span>Виртуальная реальность</a></li>
+				<li><a href="catalog.html" class="popular-link selfie"><span class="selfie-wrapper"></span>Моноподы для селфи</a></li>
+				<li><a href="#" class="popular-link action-camera"><span class="action-wrapper"></span>Экшн-камеры</a></li>
+				<li><a href="#" class="popular-link fitness"><span class="fitness-wrapper"></span>Фитнес-браслеты</a></li>
+				<li><a href="#" class="popular-link smart"><span class="smart"></span>Умные часы</a></li>
+				<li><a href="#" class="popular-link quadro"><span class="quadro"></span>Квадрокоптеры</a></li>
 			</ul>
 		</section>
 	</div>
 	<section class="services">
-		<div class="controls-wrapper">
-			<h2 class="hidden-vis">Наши преимущества</h2>
-			<label for="delivery" class="btn">Доставка</label>
-			<input type="radio" name="control" id="delivery">
-			<label for="quarantee" class="btn">Гарантия</label>
-			<input type="radio" name="control" id="quarantee">
-			<label for="credit" class="btn">Кредит</label>
-			<input type="radio" id="credit" name="control">
-		</div>
-		<div class="service-descr">
-			<h3 class="descr-title">Доставка</h3>
-			<p class="descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-		</div>
-		<div class="service-descr">
-			<h3 class="descr-title">Гарантия</h3>
-			<p class="descr">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-		</div>
-		<div class="service-descr">
-			<h3 class="descr-title">Кредит</h3>
-			<p class="descr">Залезть в долдговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+		<div class="container services-container">
+			<div class="controls-wrapper">
+				<h2 class="hidden-vis">Наши преимущества</h2>
+				<input type="radio" name="control" id="delivery" checked>
+				<label for="delivery" class="btn">Доставка</label>
+				<input type="radio" name="control" id="quarantee">
+				<label for="quarantee" class="btn">Гарантия</label>
+				<input type="radio" id="credit" name="control">
+				<label for="credit" class="btn">Кредит</label>
+			</div>
+			<div class="service-descr delivery-service active">
+				<h3 class="descr-title">Доставка</h3>
+				<p class="descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+			</div>
+			<div class="service-descr warranty-service">
+				<h3 class="descr-title">Гарантия</h3>
+				<p class="descr">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+			</div>
+			<div class="service-descr credit-service">
+				<h3 class="descr-title">Кредит</h3>
+				<p class="descr">Залезть в долдговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+			</div>
 		</div>
 	</section>
 	<div class="container">
@@ -169,14 +172,12 @@
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<div class="about-us">
-					<a href="#" class="btn about-btn">Подробнее о нас</a>
-				</div>
+				<a href="#" class="btn about-btn">Подробнее о нас</a>
 			</div>
 			<div class="contacts">
 				<h3 class="contacts-title">Контакты</h3>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9145.497372858707!2d82.98860988096918!3d55.03665651943432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfef265bd82c17%3A0x6262d8eb811b0626!2z0JrQvtC90YLQuNC90LXQvdGC!5e0!3m2!1sru!2sru!4v1533923479781" frameborder="0" width="600" height="450" style="border:0" allowfullscreen=""></iframe>
+				<div class="location"></div>
 				<div class="send">
 					<a href="#" class="send-us btn">Напишите нам</a>
 				</div>
@@ -184,33 +185,36 @@
 		</section>
 	</div>
 	<footer class="page-footer">
-		<div class="footer-logo">
-			<img src="img/svg/logo-footer.svg" alt="Device">
-		</div>
-		<p class="adress">г. Москва, ул. Строителей, 15</p>
-		<div class="center-section">
-			<ul class="footer-service list-graps">
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<div class="social">
+		<div class="container">
+			<div class="footer-logo rows">
+				<img src="img/svg/logo-footer.svg" alt="Device">
+				<ul class="footer-basket list-graps">
+					<li class="user-logout"><a href="#">Войти</a></li>
+					<li><a href="#" class="compare">Сравнить</a></li>
+					<li><a href="#" class="basket">Корзина</a></li>
+				</ul>
+			</div>
+			<div class="center-section rows">
+				<p class="adress">г. Москва, ул. Строителей, 15</p>
+				<ul class="footer-service list-graps">
+					<li><a href="#" class="delivery-service">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+			</div>
+			<div class="social rows">
+				<ul class="yellow list-graps">
+					<li class="left-column"><span class="stroke"></span></li>
+				</ul>
 				<ul class="list-social list-graps">
 					<li><a href="#" class="facebook">Фэйсбук</a></li>
 					<li><a href="#" class="instagram">Инстаграмм</a></li>
 					<li><a href="#" class="twitter">Твиттер</a></li>
 				</ul>
+				<a href="https://htmlacademy.ru/intensive/htmlcss" class="logo"><img src="img/svg/logo-html.svg"></a>
 			</div>
 		</div>
-		<ul class="footer-menu list-graps">
-			<li class="user-logout"><a href="#">Войти</a></li>
-		</ul>
-		<ul class="footer-basket list-graps">
-			<li><a href="#" class="compare">Сравнить</a></li>
-			<li><a href="#" class="basket">Корзина</a></li>
-		</ul>
-		<a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-		<a href="https://htmlacademy.ru/intensive/htmlcss" class="logo"><img src="img/svg/logo-html.svg"></a>
 	</footer> 
 	<form action="" method="POST">
 		<div class="modal feedback-container">
