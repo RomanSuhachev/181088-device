@@ -31,18 +31,20 @@
 					<div class="main-nav">
 						<ul class="catalog-link list-graps">
 							<li><a href="#" class="catalog">Каталог товаров</a>
-								<ul class="drop-down list-graps first">
-									<li><a href="#">Виртуальная реальность</a></li>
-									<li><a href="catalog.html">Фитнес браслеты</a></li>
-									<li><a href="#">Квадрокоптеры</a></li>
-								</ul>
-								<ul class="drop-down list-graps second">
-									<li><a href="#">Моноподы для селфи</a></li>
-									<li><a href="#">Умные часы</a></li>
-								</ul>
-								<ul class="drop-down list-graps thirty">
-									<li><a href="#">Экшн-камеры</a></li>
-								</ul>
+								<div class="menu-wrapper">
+									<ul class="drop-down list-graps first">
+										<li><a href="#">Виртуальная реальность</a></li>
+										<li><a href="catalog.html">Моноподы для селфи</a></li>
+										<li><a href="#">Экшн-камеры</a></li>
+									</ul>
+									<ul class="drop-down list-graps second-list">
+										<li><a href="#">Фитнес-браслеты</a></li>
+										<li><a href="#">Умные часы</a></li>
+									</ul>
+									<ul class="drop-down list-graps third">
+										<li><a href="#">Квадрокоптеры</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 						<ul class="header-menu list-graps">
@@ -118,7 +120,7 @@
 			<h2 class="hidden-vis">Популярные категории</h2>
 			<ul class="popular list-graps">
 				<li><a href="#" class="popular-link vr"><img src="img/svg/popular-1.svg" width="160" height="160"><span class="vr-wrapper">Виртуальная реальность</span></a></li>
-				<li><a href="catalog.html" class="popular-link selfie"><img src="img/svg/popular-2.svg"width="160" height="160"><span class="selfie-wrapper">Моноподы<br>для селфи</span></a></li>
+				<li><a href="catalog.html" class="popular-link selfie"><img src="img/svg/popular-2.svg" width="160" height="160"><span class="selfie-wrapper">Моноподы<br>для селфи</span></a></li>
 				<li><a href="#" class="popular-link action-camera"><img src="img/svg/popular-3.svg" width="160" height="160"><span class="action-wrapper">Экшн-камеры</span></a></li>
 				<li><a href="#" class="popular-link fitness"><img src="img/svg/popular-4.svg" width="160" height="160"><span class="fitness-wrapper">Фитнес-браслеты</span></a></li>
 				<li><a href="#" class="popular-link smart"><img src="img/svg/popular-5.svg" width="160" height="160"><span class="smart">Умные часы</span></a></li>
@@ -218,14 +220,20 @@
 	</footer> 
 	<form action="" method="POST">
 		<div class="modal feedback-container">
-			<label for="name">Введите ваше Имя:</label>
-			<input type="text" id="name" class="name-feedback" placeholder="Имя Фамилия">
-			<label for="e-mail">Введите ваш e-mail:</label>
-			<input type="mail" id="e-mail" class="email-feedback" placeholder="email@example.com">
-			<p>Введите текст:</p>
-			<textarea name="" id="" cols="30" rows="10" class="area-feedback" placeholder="В свободной форме"></textarea>				
-			<input type="submit" class="submit-btn submit-feedback btn" value="Отправить">
-			<button class="close-modal" type="button">Закрыть</button>
+			<div class="container-modal">
+				<div class="name-container">
+					<label for="name">Введите ваше Имя:</label>
+					<input type="text" id="name" class="name-feedback" placeholder="Имя Фамилия">
+				</div>
+				<div class="email-container">
+					<label for="e-mail">Введите ваш e-mail:</label>
+					<input type="email" id="e-mail" class="email-feedback" placeholder="email@example.com">
+				</div>
+				<p>Введите текст:</p>
+				<textarea cols="30" rows="10" class="area-feedback" placeholder="В свободной форме"></textarea>				
+				<input type="submit" class="submit-btn submit-feedback btn" value="Отправить">
+				<button class="close-modal" type="button">Закрыть</button>
+			</div>
 		</div>
 	</form>
 </body>
