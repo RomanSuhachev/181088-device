@@ -907,6 +907,7 @@ justify-content: space-between;
 padding:30px 75px;
 background-color:#ebebeb;
 margin-top: 40px;
+margin-bottom: 80px;
 }
 .title-list {
 	display: -webkit-flex;
