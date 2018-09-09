@@ -825,6 +825,7 @@ min-height: 370px;
 }
 .goods-table {
 	width: 760px;
+	margin-top: 70px;
 }
 .menu-wrapper {
 	display: flex;
