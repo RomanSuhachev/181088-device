@@ -30,7 +30,7 @@
 					</div>
 					<div class="main-nav">
 						<ul class="catalog-link list-graps">
-							<li><a href="#" class="catalog">Каталог товаров</a>
+							<li class="catalog-item-hover"><a href="#" class="catalog">Каталог товаров</a>
 								<div class="menu-wrapper">
 									<ul class="drop-down list-graps first">
 										<li><a href="#">Виртуальная реальность</a></li>
@@ -61,13 +61,18 @@
 				<label for="one"></label>
 				<label for="two"></label>
 				<label for="three"></label>
-				<input type="radio" name="control" id="one">
-				<input type="radio" name="control" id="two">
-				<input type="radio" name="control" id="three">
+				<input type="radio" name="controled" id="one" checked>
+				<input type="radio" name="controled" id="two">
+				<input type="radio" name="controled" id="three">
 			</div>
 			<div class="slider slider-one">
-				<img src="img/slider-1.png" alt="Монопод" width="384px" height="486px">
+				<div class="img-container">
+					<img src="img/slider-1.png" alt="Монопод" width="384px" height="486px">
+				</div>
 				<div class="slider-description">
+					<div class="one">
+						<span class="row-left"></span><span class="number-one number-blocks"></span>
+					</div>
 					<p class="slider-lead">Делай селфи,<br>как Бен Стиллер!</p>
 					<p class="descr">Самая длинная палка для селфи доступна в нашем магазине.Восемь(Восемь,Карл) метров длиной и весом всего 5 килограмм.</p>
 					<a href="#" class="more btn">Подробнее</a>
@@ -87,33 +92,43 @@
 			</div>
 			<div class="slider slider-two slider-hidden">
 				<img src="img/slider-2.png" alt="Фитнес-браслет" width="345px" height="485px">
-				<p class="slider-lead">Худеем правильно!</p>
-				<p class="descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия о соблюдать диету.</p>
-				<a href="#" class="more btn">Подробнее</a>
-				<table class="characteristics">
-					<tr>
-						<td>48 часов</td>
-					</tr>
-					<tr>
-						<td>Без подзарядки</td>
-					</tr>
-				</table>
+				<div class="slider-description">
+					<div class="two">
+						<span class="row-left"></span><span class="number-two number-blocks"></span>
+					</div>
+					<p class="slider-lead lead-two">Худеем правильно!</p>
+					<p class="descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия о соблюдать диету.</p>
+					<a href="#" class="more btn">Подробнее</a>
+					<table class="characteristics">
+						<tr>
+							<td>48 часов</td>
+						</tr>
+						<tr>
+							<td>Без подзарядки</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 			<div class="slider slider-three slider-hidden">
 				<img src="img/slider-3.png" alt="Монопод" width="526px" height="334px">
-				<p class="slider-lead">Порхает как бабочка, жалит как пчела!</p>
-				<p class="descr">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-				<a href="#" class="more btn">Подробнее</a>
-				<table class="characteristics">
-					<tr>
-						<td>800 м</td>
-						<td>50 м</td>
-					</tr>
-					<tr>
-						<td>Дальность полета</td>
-						<td>Радиус поражения</td>
-					</tr>
-				</table>
+				<div class="slider-description">
+					<div class="three">
+						<span class="row-left"></span><span class="number-three number-blocks"></span>
+					</div>
+					<p class="slider-lead">Порхает как бабочка, жалит как пчела!</p>
+					<p class="descr">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+					<a href="#" class="more btn">Подробнее</a>
+					<table class="characteristics">
+						<tr>
+							<td>800 м</td>
+							<td>50 м</td>
+						</tr>
+						<tr>
+							<td>Дальность полета</td>
+							<td>Радиус поражения</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 		<section class="goods-list">
@@ -191,9 +206,9 @@
 			<div class="footer-logo rows">
 				<img src="img/svg/logo-footer.svg" alt="Device">
 				<ul class="footer-basket list-graps">
-					<li class="user-logout"><a href="#">Войти</a></li>
-					<li><a href="#" class="compare">Сравнить</a></li>
-					<li><a href="#" class="basket">Корзина</a></li>
+					<li class="user-logout"><a href="#" class="user-footer">Войти</a></li>
+					<li><a href="#" class="compare-footer">Сравнить</a></li>
+					<li><a href="#" class="basket-footer">Корзина</a></li>
 				</ul>
 			</div>
 			<div class="center-section rows">
@@ -221,18 +236,21 @@
 	<form action="" method="POST">
 		<div class="modal feedback-container">
 			<div class="container-modal">
-				<div class="name-container">
-					<label for="name">Введите ваше Имя:</label>
-					<input type="text" id="name" class="name-feedback" placeholder="Имя Фамилия">
+				<div class="modal-header">
+					<div class="name-container">
+						<label for="name">Введите ваше Имя:</label>					<input type="text" id="name" class="name-feedback" placeholder="Имя Фамилия">
+					</div>
+					<div class="email-container">
+						<label for="e-mail">Введите ваш e-mail:</label>
+						<input type="email" id="e-mail" class="email-feedback" placeholder="email@example.com">
+					</div>
 				</div>
-				<div class="email-container">
-					<label for="e-mail">Введите ваш e-mail:</label>
-					<input type="email" id="e-mail" class="email-feedback" placeholder="email@example.com">
+				<div class="textarea-container">
+					<p>Введите текст:</p>
+					<textarea cols="30" rows="10" class="area-feedback" placeholder="В свободной форме"></textarea>				
+					<input type="submit" class="submit-btn submit-feedback btn" value="Отправить">
+					<button class="close-modal" type="button">Закрыть</button>
 				</div>
-				<p>Введите текст:</p>
-				<textarea cols="30" rows="10" class="area-feedback" placeholder="В свободной форме"></textarea>				
-				<input type="submit" class="submit-btn submit-feedback btn" value="Отправить">
-				<button class="close-modal" type="button">Закрыть</button>
 			</div>
 		</div>
 	</form>
