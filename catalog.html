@@ -7,132 +7,130 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="header-container container">
-		<header class="main-header">
-			<nav class="header-nav">
-				<div class="wrapper">
-					<div class="header-logo"><a href="index.html"><img src="img/svg/header-logo.svg" alt="DEVICE"></a></div>
-					<div class="menu-container">
-						<form action="#" method="GET">
-							<div class="search-container">
-								<span class="search-logo"></span>
-								<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Найти</button>
-							</div>
-						</form>
-						<ul class="user-login list-graps">
-							<li class="username login"><a href="#" class="log-in">Валентин Петухов</a></li>
-							<li><a href="#" class="logout">Выйти</a></li>
-						</ul>
-						<ul class="user-basket list-graps"> 
-							<li><a href="#" class="compare">Сравнить</a></li>
-							<li><a href="#" class="basket">Корзина</a></li>
-						</ul>
-					</div>
-					<div class="main-nav">
-						<ul class="catalog-link list-graps">
-							<li class="catalog-item-hover"><a href="#" class="catalog">Каталог товаров</a>
-								<div class="menu-wrapper">
-									<ul class="drop-down list-graps first">
-										<li><a href="#">Виртуальная реальность</a></li>
-										<li><a href="#">Моноподы для селфи</a></li>
-										<li><a href="#">Экшн-камеры</a></li>
-									</ul>
-									<ul class="drop-down second-list list-graps">
-										<li><a href="#">Фитнес-браслеты</a></li>
-										<li><a href="#">Умные часы</a></li>
-									</ul>
-									<ul class="drop-down list-graps third">
-										<li><a href="#">Квадрокоптеры</a></li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-						<ul class="header-menu list-graps">
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Гарантия</a></li>
-							<li><a href="#">Доставка</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-		<main>
-			<section class="goods-name">
-				<div class="wrapper">
-					<div class="container-catalog container">
-						<h1 class="goods-name-title">Моноподы для селфи</h1>
-						<nav class="goods-breadcrumb">
-							<ul class="nav-list list-graps">
-								<li><a href="index.html">Главная</a></li>
-								<li><a href="#">Каталог товаров</a></li>
-								<li><a href="#">Моноподы для селфи</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</section>
-		</main>
-	</div>
-	<main>
-		<div class="controls-goods">
-			<div class="container filter-wrapper">
-				<div class="title-container">
-					<h2 class="filter-title">Фильтр:</h2>
-				</div>
-				<div class="sort-container">
-					<h2 class="sort">Сортировка:</h2>
-					<ul class="title-list list-graps">
-						<li><a href="#" class="sort-link active">По цене</a></li>
-						<li><a href="#" class="sort-link">По типу</a></li>
-						<li><a href="#" class="sort-link">По популярности</a></li>
+	<header class="main-header header-container container">
+		<nav class="header-nav">
+			<div class="wrapper">
+				<div class="header-logo"><a href="index.html"><img src="img/svg/header-logo.svg" alt="DEVICE" width="150" height="50"></a></div>
+				<div class="menu-container">
+					<form action="#" method="GET">
+						<div class="search-container">
+							<span class="search-logo"></span>
+							<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Найти</button>
+						</div>
+					</form>
+					<ul class="user-login list-graps">
+						<li class="username login"><a href="#" class="log-in">Валентин Петухов</a></li>
+						<li><a href="#" class="logout">Выйти</a></li>
 					</ul>
-					<ul class="title-list arrow-control list-graps">
-						<li class="arrows"><a href="#" class="row arrow-up"></a></li>
-						<li class="arrows"><a href="#" class="row arrow-down active"></a></li>
+					<ul class="user-basket list-graps"> 
+						<li><a href="#" class="compare">Сравнить</a></li>
+						<li><a href="#" class="basket">Корзина</a></li>
+					</ul>
+				</div>
+				<div class="main-nav">
+					<ul class="catalog-link list-graps">
+						<li class="catalog-item-hover"><a href="#" class="catalog">Каталог товаров</a>
+							<div class="menu-wrapper">
+								<ul class="drop-down list-graps first">
+									<li><a href="#">Виртуальная реальность</a></li>
+									<li><a href="#">Моноподы для селфи</a></li>
+									<li><a href="#">Экшн-камеры</a></li>
+								</ul>
+								<ul class="drop-down second-list list-graps">
+									<li><a href="#">Фитнес-браслеты</a></li>
+									<li><a href="#">Умные часы</a></li>
+								</ul>
+								<ul class="drop-down list-graps third">
+									<li><a href="#">Квадрокоптеры</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<ul class="header-menu list-graps">
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Доставка</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="container-goods">
-				<div class="filter">
-					<div class="wrapper">
-						<form action="" class="filter-params" method="GET">
-							<div class="filter-container">
-								<div class="price">
-									<label for="range-price">Стоимость</label>
-									<input type="range" id="range-price" min="0">
-								</div>
-								<div class="color">
-									<h3>Цвет</h3>
-									<input type="checkbox" name="colors" id="black" value="black">
-									<label for="black">Черный</label>
-									<input type="checkbox" name="colors" id="white" value="white">
-									<label for="white">Белый</label>
-									<input type="checkbox" name="colors" id="blue" value="blue">
-									<label for="blue">Синий</label>
-									<input type="checkbox" name="colors" id="red" value="red">
-									<label for="red">Красный</label>
-									<input type="checkbox" name="colors" id="purple" value="purple">
-									<label for="purple">Розовый</label>
-								</div>
-								<div class="functions">
-									<h3>Bluetooth</h3>
-									<input type="radio" name="function" id="one" value="yes">
-									<label for="one">Есть</label>
-									<input type="radio" name="function" id="two" value="no">
-									<label for="two">Нет</label>
-								</div>
-								<button type="submit" class="submit-btn btn">показать</button>
-							</div>
-						</form>
-					</div>
+		</nav>
+	</header>
+	<main>
+		<section class="goods-name">
+			<div class="container">
+				<div class="container-catalog container">
+					<h1 class="goods-name-title">Моноподы для селфи</h1>
+					<nav class="goods-breadcrumb">
+						<ul class="nav-list list-graps">
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="#">Каталог товаров</a></li>
+							<li><a href="#">Моноподы для селфи</a></li>
+						</ul>
+					</nav>
 				</div>
+			</div>
+		</section>
+	</main>
+	<div class="controls-goods">
+		<div class="container filter-wrapper">
+			<div class="title-container">
+				<h2 class="filter-title">Фильтр:</h2>
+			</div>
+			<div class="sort-container">
+				<h2 class="sort">Сортировка:</h2>
+				<ul class="title-list list-graps">
+					<li><a href="#" class="sort-link active">По цене</a></li>
+					<li><a href="#" class="sort-link">По типу</a></li>
+					<li><a href="#" class="sort-link">По популярности</a></li>
+				</ul>
+				<ul class="title-list arrow-control list-graps">
+					<li class="arrows"><a href="#" class="row arrow-up"></a></li>
+					<li class="arrows"><a href="#" class="row arrow-down active"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="container-goods">
+			<div class="filter">
+				<div class="wrapper">
+					<form action="" class="filter-params" method="GET">
+						<div class="filter-container">
+							<div class="price-container">
+								<label for="range-price">Стоимость</label>
+								<input type="range" id="range-price" min="0">
+							</div>
+							<div class="color">
+								<h3>Цвет</h3>
+								<input type="checkbox" name="colors" id="black" value="black">
+								<label for="black">Черный</label>
+								<input type="checkbox" name="colors" id="white" value="white">
+								<label for="white">Белый</label>
+								<input type="checkbox" name="colors" id="blue" value="blue">
+								<label for="blue">Синий</label>
+								<input type="checkbox" name="colors" id="red" value="red">
+								<label for="red">Красный</label>
+								<input type="checkbox" name="colors" id="purple" value="purple">
+								<label for="purple">Розовый</label>
+							</div>
+							<div class="functions">
+								<h3>Bluetooth</h3>
+								<input type="radio" name="function" id="one" value="yes">
+								<label for="one">Есть</label>
+								<input type="radio" name="function" id="two" value="no">
+								<label for="two">Нет</label>
+							</div>
+							<button type="submit" class="submit-btn btn">показать</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<main>
 				<div class="goods-table">
 					<div class="goods-container">
 						<div class="goods-wrapper">
 							<article class="goods-block block1">
-								<div class="blocks-body"><img src="img/item-1.jpg" width="360px" height="380px" alt="Селфи палка">
+								<div class="blocks-body"><img src="img/item-1.jpg" width="360" height="380" alt="Селфи палка">
 								</div>
 								<footer class="footer blocks-footer">
 									<div class="goods-name"><h2>Любительская селфи-палка</h2>
@@ -142,7 +140,7 @@
 								<div class="links-hidden"><a href="#" class="add btn">В корзину</a><a href="#" class="add2">Добавить к сравнению</a></div>
 							</article>
 							<article class="goods-block block2">
-								<div class="blocks-body"><img src="img/item-2.jpg" width="360px" height="380px" alt="Селфи палка"></div>
+								<div class="blocks-body"><img src="img/item-2.jpg" width="360" height="380" alt="Селфи палка"></div>
 								<footer class="footer blocks-footer">
 									<div class="goods-name"><h2>Профессиональная<br> селфи-палка</h2>
 										<span class="price">1500 руб.</span>
@@ -151,7 +149,7 @@
 								<div class="links-hidden"><a href="#" class="add btn">В корзину</a><a href="#" class="add2">Добавить к сравнению</a></div>
 							</article>
 							<article class="goods-block block3">
-								<div class="blocks-body"><img src="img/item-3.jpg" width="360px" height="380px" alt="Селфи палка"></div>
+								<div class="blocks-body"><img src="img/item-3.jpg" width="360" height="380" alt="Селфи палка"></div>
 								<footer class="footer blocks-footer">
 									<div class="goods-name"><h2>Непотопляемая селфи-палка</h2>
 										<span class="price">2500 руб.</span>
@@ -160,7 +158,7 @@
 								<div class="links-hidden"><a href="#" class="add btn">В корзину</a><a href="#" class="add2">Добавить к сравнению</a></div>
 							</article>
 							<article class="goods-block block4">
-								<div class="blocks-body"><img src="img/item-4.jpg" width="360px" height="380px" alt="Селфи палка"></div>
+								<div class="blocks-body"><img src="img/item-4.jpg" width="360" height="380" alt="Селфи палка"></div>
 								<footer class="footer blocks-footer">
 									<div class="goods-name"><h2>Селфи-палка &laquo; Следуй за мной &raquo;</h2>
 										<span class="price">4900 руб.</span>
@@ -180,39 +178,41 @@
 						</ul>
 					</nav>
 				</div>
-	</main>
-		<footer class="page-footer">
-			<div class="container">
-				<div class="footer-logo rows">
-					<img src="img/svg/logo-footer.svg" alt="Device">
-					<ul class="user-login-footer list-graps">
-						<li class="username"><a href="#">Валентин Петухов</a></li>
-						<li><a href="#" class="logout">Выйти</a></li>
-						<li><a href="#" class="compare">Сравнить</a></li>
-						<li><a href="#" class="basket">Корзина</a></li>
-					</ul>
-				</div>
-				<div class="center-section rows">
-					<p class="adress">г. Москва, ул. Строителей, 15</p>
-					<ul class="footer-service list-graps">
-						<li><a href="#" class="delivery-service-footer">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-				</div>
-				<div class="social rows">
-					<ul class="yellow list-graps">
-						<li class="left-column"><span class="stroke"></span></li>
-					</ul>
-					<ul class="list-social list-graps">
-						<li><a href="#" class="facebook">Фэйсбук</a></li>
-						<li><a href="#" class="instagram">Инстаграмм</a></li>
-						<li><a href="#" class="twitter">Твиттер</a></li>
-					</ul>
-					<a href="https://htmlacademy.ru/intensive/htmlcss" class="logo"><img src="img/svg/logo-html.svg"></a>
-				</div>
 			</div>
-		</footer> 
-	</body>
-	</html>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="footer-logo rows">
+				<img src="img/svg/logo-footer.svg" alt="Device" width="150" height="50">
+				<ul class="user-login-footer list-graps">
+					<li class="username"><a href="#">Валентин Петухов</a></li>
+					<li><a href="#" class="logout">Выйти</a></li>
+					<li><a href="#" class="compare">Сравнить</a></li>
+					<li><a href="#" class="basket">Корзина</a></li>
+				</ul>
+			</div>
+			<div class="center-section rows">
+				<p class="adress">г. Москва, ул. Строителей, 15</p>
+				<ul class="footer-service list-graps">
+					<li><a href="#" class="delivery-service-footer">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+			</div>
+			<div class="social rows">
+				<ul class="yellow list-graps">
+					<li class="left-column"><span class="stroke"></span></li>
+				</ul>
+				<ul class="list-social list-graps">
+					<li><a href="#" class="facebook">Фэйсбук</a></li>
+					<li><a href="#" class="instagram">Инстаграмм</a></li>
+					<li><a href="#" class="twitter">Твиттер</a></li>
+				</ul>
+				<a href="https://htmlacademy.ru/intensive/htmlcss" class="logo"><img src="img/svg/logo-html.svg" width="27" height="35" alt="HtmlAcademy"></a>
+			</div>
+		</div>
+	</footer> 
+</body>
+</html>
