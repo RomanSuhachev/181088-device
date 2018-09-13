@@ -37,22 +37,21 @@ body {
 	line-height:30px;
 	font-weight:300;
 	color:#000000;
-	width:1440px;
-	margin:0 auto;
 	background-color:#ffffff;
+	padding: 60px 0;
 }
 .container {
 	width:1160px;
 	margin:0 auto;
 }
-.header-container {
-	margin-top:40px;
+.logo {
+	transform: translateY(-25px);
+	margin-bottom: -15px;
 }
 .header-logo {
 	padding:0px;
 	margin:0px;
 	display: inline-block;
-	transform: translateY(-20px);
 }
 .hidden-vis {
 	display: none;
@@ -101,13 +100,9 @@ a {
 	display: flex;
 	justify-content: space-between;
 	text-transform:uppercase;
-	align-content: stretch;
 }
 .catalog-link a, .header-menu a{
 	color:inherit;
-}
-.catalog-link {
-	margin-bottom: 170px;
 }
 .drop-down a {
 	line-height:36px;
@@ -149,7 +144,6 @@ a {
 .delivery-service {
 	margin-top: -20px;
 	margin-left:0px;
-	border: 1px solid yellow;
 }
 .goods-name-title, .slider-lead, .delivery, .about-title, .contacts-title, .descr-title {
 	font-family:'Gilroy','Arial', sans-serif;
@@ -202,7 +196,7 @@ a {
 }
 .main-header {
 	background-color:#f7e296;
-	padding:0 60px;
+	padding:0 60px 170px 60px;
 }
 .list-social a {
 	display:block;
@@ -289,7 +283,7 @@ a {
 }
 .search-container {
 	width:540px;
-	height:48px;
+	height:30px;
 }
 .search-input::placeholder {
 	font-family:'Opensans','Arial', sans-serif;
@@ -304,16 +298,17 @@ a {
 	border:2px solid #000000;
 	color:#000000;
 	width:77px;
-	height:48px;
+	height:30px;
 	display: none;
 }
 .search-input {
 	border:none;
-	background:url(../img/svg/search.svg) #f7e296 no-repeat left;
+	background:url(../img/svg/search.svg) #f7e296 no-repeat left top;
 	outline:none;
 	width:336px;
-	height:46px;
+	height:30px;
 	padding-left:40px;
+	background-position: 3px 7px;
 }
 .search-input:focus ~ .btn-search {
 	display:inline-block;
@@ -542,18 +537,15 @@ a {
 	width:500px;
 	letter-spacing:0.2em;
 }
-.container-last {
-	border:1px solid red;
-}
 .header-menu li:nth-of-type(2) {
-	margin-left:40px;
+	margin-left:35px;
 }
 .header-menu li:last-child {
-	margin-left:100px;
+	margin-left:108px;
 }
 .menu-container {
 	display: flex;
-	margin-bottom:45px;
+	margin-bottom:40px;
 }
 .drop-down {
 	display: -webkit-flex;
@@ -643,7 +635,7 @@ a {
 	content:'';
 	background:url(../img/svg/plus.svg) no-repeat center;
 	position: absolute;
-	right: -20px;
+	right: -8px;
 	top: 3px;
 	opacity:.3;
 }
@@ -778,6 +770,7 @@ a {
 	display: inline-block;
 	margin-top:-30px;
 	margin-bottom:155px;
+
 }
 .controls-wrapper [type="radio"] {
 	display:none;
@@ -875,10 +868,10 @@ a {
 	position: absolute;
 	right:80px;
 	top: 313px;
+	z-index: 999;
 }
 .container-catalog {
 	padding:0 60px;
-	border: 1px solid red;
 }
 .goods-wrapper {
 	display: -webkit-flex;
@@ -900,13 +893,15 @@ a {
 	bottom:0px;
 	left:0px;
 	position: absolute;
-	width:1040px;
+	width:1160px;
 	background:#f7e296;
-	z-index:50;
+	z-index:10;
+	margin-left: -60px;
 	display: none;
 	padding-top: 40px;
 	transform: translateY(100%);
 	padding-bottom: 22px;
+	padding-left: 60px;
 }
 .menu-wrapper .first {
 	margin:0px;
@@ -969,9 +964,10 @@ a {
 	display: flex;
 	flex-direction:row;
 	justify-content: space-between;
-	width:260px;
+	width:400px;
 	background-color:#eeeeee;
 	margin-right:70px;
+	padding-left: 140px;
 }
 .container-goods {
 	display: -webkit-flex;
@@ -981,6 +977,7 @@ a {
 	display: flex;
 	width:100%;
 	justify-content: space-between;
+	padding-right: 140px;
 }
 .paginator {
 	display: flex;
@@ -1053,7 +1050,6 @@ a {
 .filter-container {
 	width: 1100px;
 	margin:0px;
-	padding-left:60px;
 	padding-top: 70px;
 }
 .filter-wrapper {
@@ -1091,8 +1087,20 @@ a {
 	left: 0px;
 }
 .container-goods .wrapper {
-	width: 1100px;
+	width: 260px;
 	margin:0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.range-price {
+	font-family: 'Gilroy','Arial',sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
 }
 .sort-container {
 	width: 760px;
@@ -1104,14 +1112,13 @@ a {
 	align-items: center;
 }
 .title-container {
-	width: 200px;
+	width: 260px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: flex-start;
-	padding-left:60px;
 	background: #dbdbdb;
 }
 .sort-container {
