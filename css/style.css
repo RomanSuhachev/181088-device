@@ -169,6 +169,7 @@ a {
 	position: relative;
 	background:transparent;
 	letter-spacing:.2em;
+  z-index:2;
 }
 .btn::after {
 	content:'';
