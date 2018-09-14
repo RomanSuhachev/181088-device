@@ -744,7 +744,6 @@ a {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	border: 1px solid red;
 }
 .img-container {
 	margin-right: 60px;
