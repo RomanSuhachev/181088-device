@@ -1184,6 +1184,7 @@ a {
 	width: 100%;	
 	resize: none;
 	padding: 20px;
+  border:none;
 }
 .close-modal {
 	background: url(../img/svg/modal-close.svg) no-repeat center;
