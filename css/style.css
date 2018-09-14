@@ -303,12 +303,11 @@ a {
 }
 .search-input {
 	border:none;
-	background:url(../img/svg/search.svg) #f7e296 no-repeat left top;
+	background:url(../img/svg/search.svg) #f7e296 no-repeat 3px 7px;
 	outline:none;
 	width:336px;
 	height:30px;
 	padding-left:40px;
-	background-position: 3px 7px;
 }
 .search-input:focus ~ .btn-search {
 	display:inline-block;
