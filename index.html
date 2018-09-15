@@ -7,56 +7,56 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="header-container container">
-		<header class="main-header">
-			<nav class="header-nav">
-				<div class="wrapper">
-					<div class="logo">
-						<h1 class="header-logo"><img src="img/svg/logo-header.svg" alt="DEVICE" width="165" height="50"></h1>
-					</div>
-					<div class="menu-container">
-						<form action="#" class="search-form" method="GET">
-							<div class="search-container">
-								<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Найти</button>
-							</div>
-						</form>
-						<ul class="user-login list-graps">
-							<li class="login"><a href="#" class="log-in">Войти</a></li>
-						</ul>
-						<ul class="user-basket list-graps">
-							<li><a href="#" class="compare">Сравнить</a></li>
-							<li><a href="#" class="basket">Корзина</a></li>
-						</ul>
-					</div>
-					<div class="main-nav">
-						<ul class="catalog-link list-graps">
-							<li class="catalog-item-hover"><a href="#" class="catalog">Каталог товаров</a>
-								<div class="menu-wrapper">
-									<ul class="drop-down list-graps first">
-										<li><a href="#">Виртуальная реальность</a></li>
-										<li><a href="catalog.html">Моноподы для селфи</a></li>
-										<li><a href="#">Экшн-камеры</a></li>
-									</ul>
-									<ul class="drop-down list-graps second-list">
-										<li><a href="#">Фитнес-браслеты</a></li>
-										<li><a href="#">Умные часы</a></li>
-									</ul>
-									<ul class="drop-down list-graps third">
-										<li><a href="#">Квадрокоптеры</a></li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-						<ul class="header-menu list-graps">
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Гарантия</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div>
+	<header class="main-header container">
+		<nav class="header-nav">
+			<div class="wrapper">
+				<div class="logo">
+					<h1 class="header-logo"><img src="img/svg/logo-header.svg" alt="DEVICE" width="165" height="50"></h1>
 				</div>
-			</nav>
-		</header>
-		<div class="slider-container">
+				<div class="menu-container">
+					<form action="#" class="search-form" method="GET">
+						<div class="search-container">
+							<input type="text" placeholder="Поиск по сайту" class="search-input"><button class="btn-search" type="submit">Найти</button>
+						</div>
+					</form>
+					<ul class="user-login list-graps">
+						<li class="login"><a href="#" class="log-in">Войти</a></li>
+					</ul>
+					<ul class="user-basket list-graps">
+						<li><a href="#" class="compare">Сравнить</a></li>
+						<li><a href="#" class="basket">Корзина</a></li>
+					</ul>
+				</div>
+				<div class="main-nav">
+					<ul class="catalog-link list-graps">
+						<li class="catalog-item-hover"><a href="#" class="catalog">Каталог товаров</a>
+							<div class="menu-wrapper">
+								<ul class="drop-down list-graps first">
+									<li><a href="#">Виртуальная реальность</a></li>
+									<li><a href="catalog.html">Моноподы для селфи</a></li>
+									<li><a href="#">Экшн-камеры</a></li>
+								</ul>
+								<ul class="drop-down list-graps second-list">
+									<li><a href="#">Фитнес-браслеты</a></li>
+									<li><a href="#">Умные часы</a></li>
+								</ul>
+								<ul class="drop-down list-graps third">
+									<li><a href="#">Квадрокоптеры</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<ul class="header-menu list-graps">
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="slider-container container">
 			<div class="controls">
 				<label for="one"></label>
 				<input type="radio" name="controled" id="one" checked>
@@ -85,14 +85,16 @@
 							</tr>
 							<tr>
 								<td>Длина палки</td>
-								<td>Вес палки</td>
-								<td>Материал</td>
+								<td class="char-one">Вес палки</td>
+								<td class="char-two">Материал</td>
 							</tr>
 						</table>
 					</div>
 				</div>
 				<div class="slider slider-two slider-hidden">
+					<div class="img-container">
 					<img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+					</div>
 					<div class="slider-description">
 						<div class="two">
 							<span class="row-left"></span><span class="number-two number-blocks"></span>
@@ -111,7 +113,9 @@
 					</div>
 				</div>
 				<div class="slider slider-three slider-hidden">
+					<div class="img-container">
 					<img src="img/slider-3.png" alt="Монопод" width="526" height="334">
+					</div>
 					<div class="slider-description">
 						<div class="three">
 							<span class="row-left"></span><span class="number-three number-blocks"></span>
@@ -132,12 +136,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<section class="goods-list">
+		</section>
+		<section class="goods-list container">
 			<h2 class="hidden-vis">Популярные категории</h2>
 			<ul class="popular list-graps">
 				<li><a href="#" class="popular-link vr"><div class="colors"><div class="images virtual"></div></div><span class="vr-wrapper">Виртуальная реальность</span></a></li>
-				<li><a href="catalog.html" class="popular-link selfie"><div class="colors"><div class="images monopod"></div></div><span class="selfie-wrapper">Моноподы<br>для селфи</span></a></li>
+				<li><a href="catalog.html" class="popular-link selfie"><div class="colors monopod-colors"><div class="images monopod"></div></div><span class="selfie-wrapper">Моноподы<br>для селфи</span></a></li>
 				<li><a href="#" class="popular-link action-camera"><div class="colors"><div class="images camera"></div></div><span class="action-wrapper">Экшн-камеры</span></a></li>
 				<li><a href="#" class="popular-link fitness"><div class="colors"><div class="images bracer"></div></div><span class="fitness-wrapper">Фитнес-браслеты</span></a></li>
 				<li><a href="#" class="popular-link smart"><div class="colors"><div class="images hours"></div></div><span class="smart">Умные часы</span></a></li>
@@ -150,7 +154,7 @@
 			<div class="controls-wrapper">
 				<h2 class="hidden-vis">Наши преимущества</h2>
 				<input type="radio" name="control" id="delivery" checked>
-				<label for="delivery" class="btn">Доставка</label>
+				<label for="delivery" class="btn delivery-btn">Доставка</label>
 				<input type="radio" name="control" id="quarantee">
 				<label for="quarantee" class="btn">Гарантия</label>
 				<input type="radio" id="credit" name="control">
@@ -170,96 +174,89 @@
 			</div>
 		</div>
 	</section>
-	<div class="container">
-		<section class="mark-container">
-			<h2 class="hidden-vis">Бренды</h2>
-			<ul class="marks-list list-graps">
-				<li><a href="#" class="marks-link dji">DJI</a></li>
-				<li><a href="#" class="marks-link sp-gadjets">SP Gadjets</a></li>
-				<li><a href="#" class="marks-link gopro">GoPro</a></li>
-				<li><a href="#" class="marks-link vive">Vive</a></li>
-			</ul>
-		</section>
-		<section class="container-partners">
-			<h2 class="hidden-vis">Мы и наши партнеры</h2>
-			<div class="about-us">
-				<h3 class="about-title">О нас</h3>
-				<p>Огромный выбор гаджетов не оставит равнодушным гика,который есть в каждом из нас.</p>
-				<p class="text-2">МЫ можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
-				<ul class="list-partner list-graps">
-					<li>Деловые Линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
-				</ul>
-				<a href="#" class="btn about-btn">Подробнее о нас</a>
-			</div>
-			<div class="contacts">
-				<h3 class="contacts-title">Контакты</h3>
-				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<div class="location"></div>
-				<div class="send">
-					<a href="#" class="send-us btn">Напишите нам</a>
-				</div>
-			</div>
-		</section>
+	<section class="mark-container container">
+		<h2 class="hidden-vis">Бренды</h2>
+		<ul class="marks-list list-graps">
+			<li><a href="#" class="marks-link dji">DJI</a></li>
+			<li><a href="#" class="marks-link sp-gadjets">SP Gadjets</a></li>
+			<li><a href="#" class="marks-link gopro">GoPro</a></li>
+			<li><a href="#" class="marks-link vive">Vive</a></li>
+		</ul>
+	</section>
+</div>
+<section class="container-partners container">
+	<h2 class="hidden-vis">Мы и наши партнеры</h2>
+	<div class="about-us">
+		<h3 class="about-title">О нас</h3>
+		<p>Огромный выбор гаджетов не оставит равнодушным гика,который есть в каждом из нас.</p>
+		<p class="text-2">МЫ можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями.</p>
+		<ul class="list-partner list-graps">
+			<li>Деловые Линии</li>
+			<li>Автотрейдинг</li>
+			<li>ЖелДорЭкспедиция</li>
+		</ul>
+		<a href="#" class="btn about-btn">Подробнее о нас</a>
 	</div>
-	<footer class="page-footer">
-		<div class="container">
-			<div class="footer-logo rows">
-				<img src="img/svg/logo-normal.svg" alt="Device" width="165" height="50">
-				<ul class="footer-basket list-graps">
-					<li class="user-logout"><a href="#" class="user-footer">Войти</a></li>
-					<li><a href="#" class="compare-footer">Сравнить</a></li>
-					<li><a href="#" class="basket-footer">Корзина</a></li>
-				</ul>
+	<div class="contacts">
+		<h3 class="contacts-title">Контакты</h3>
+		<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+		<div class="location"></div>
+		<div class="send">
+			<a href="#" class="send-us btn">Напишите нам</a>
+		</div>
+	</div>
+</section>
+</main>
+<footer class="page-footer">
+	<div class="container">
+		<div class="footer-logo rows">
+			<img src="img/svg/logo-normal.svg" alt="Device" width="165" height="50">
+			<ul class="footer-basket list-graps">
+				<li class="user-logout"><a href="#" class="user-footer">Войти</a></li>
+				<li><a href="#" class="compare-footer">Сравнить</a></li>
+				<li><a href="#" class="basket-footer">Корзина</a></li>
+			</ul>
+		</div>
+		<div class="center-section rows">
+			<p class="adress">г. Москва, ул. Строителей, 15</p>
+			<ul class="footer-service list-graps">
+				<li class="list-delivery"><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+		</div>
+		<div class="social rows">
+			<div class="empty"></div>
+			<ul class="list-social list-graps">
+				<li class="list-facebook"><a href="#" class="facebook">Фэйсбук</a></li>
+				<li class="list-instagram"><a href="#" class="instagram">Инстаграмм</a></li>
+				<li class="list-twitter"><a href="#" class="twitter">Твиттер</a></li>
+			</ul>
+			<a href="https://htmlacademy.ru/intensive/htmlcss" class="logo"><img src="img/svg/logo-html.svg" width="27" height="35" alt="HTMLAcademy"></a>
+		</div>
+	</div>
+</footer> 
+<form action="#" method="POST">
+	<div class="modal feedback-container">
+		<div class="container-modal">
+			<div class="modal-header">
+				<div class="name-container">
+					<label for="name">Введите ваше Имя:</label>					<input type="text" id="name" class="name-feedback" placeholder="Имя Фамилия">
+				</div>
+				<div class="email-container">
+					<label for="e-mail">Введите ваш e-mail:</label>
+					<input type="email" id="e-mail" class="email-feedback" placeholder="email@example.com">
+				</div>
 			</div>
-			<div class="center-section rows">
-				<p class="adress">г. Москва, ул. Строителей, 15</p>
-				<ul class="footer-service list-graps">
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<a class="phone-number" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-			</div>
-			<div class="social rows">
-				<ul class="list-social list-graps">
-					<li><a href="#" class="facebook">Фэйсбук</a></li>
-					<li><a href="#" class="instagram">Инстаграмм</a></li>
-					<li><a href="#" class="twitter">Твиттер</a></li>
-				</ul>
-				<a href="https://htmlacademy.ru/intensive/htmlcss" class="logo"><img src="img/svg/logo-html.svg" width="27" height="35" alt="HTMLAcademy"></a>
+			<div class="textarea-container">
+				<p>Введите текст:</p>
+				<textarea cols="30" rows="10" class="area-feedback" placeholder="В свободной форме"></textarea>				
+				<button type="submit" class="btn btn-submit">Отправить</button>
+				<button class="close-modal" type="button"></button>
 			</div>
 		</div>
-	</footer> 
-	<form action="#" method="POST">
-		<div class="modal feedback-container">
-			<div class="container-modal">
-				<div class="modal-header">
-					<div class="name-container">
-						<label for="name">Введите ваше Имя:</label>					<input type="text" id="name" class="name-feedback" placeholder="Имя Фамилия">
-					</div>
-					<div class="email-container">
-						<label for="e-mail">Введите ваш e-mail:</label>
-						<input type="email" id="e-mail" class="email-feedback" placeholder="email@example.com">
-					</div>
-				</div>
-				<div class="textarea-container">
-					<p>Введите текст:</p>
-					<textarea cols="30" rows="10" class="area-feedback" placeholder="В свободной форме"></textarea>				
-          <button type="submit" class="btn btn-submit">Отправить</button>
-					<button class="close-modal" type="button"></button>
-				</div>
-			</div>
-		</div>
-	</form>
-	<script> 
-		let modal = querySelector('.modal')[0],
-		close = querySelector('.close-modal')[0];
-
-		close = addEventListener('click', function(){
-			modal.style.display = none;
-		});
-	</script>
+	</div>
+</form>
 </body>
 </html>
